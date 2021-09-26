@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>To Do List</title>
+  <style>
+    /* Footer Me CSS*/
+    footer {
+      position: fixed;
+      text-align: center;
+      padding: 10px 10px 0px 10px;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: 40px;
+      background: grey;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-success text-white p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <font face="Comic sans MS" size="11" color="black">
+            <strong>ToDo List</strong>
+          </font>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-3">
+    <h2>Add Items</h2>
+
+    <label id="lblsuccess" class="text-success" style="display: none;">
+    </label>
+
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-7">
+        <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+      </div>
+
+      <div class="col-lg-5 col-md-5 col-sm-5">
+        <input type="button" class="btn btn-dark" id="add" value="Add Item">
+        <input type="button" class="btn btn-dark" onclick="clearStorage()" value="Clear All">
+      </div>
+    </div>
+
+    <h3 class="mt-4">Tasks</h3>
+
+    <table class="table table-striped">
+      <tbody id="tableBody">
+        <tr>
+          <th scope="row">0</th>
+          <td></td>
+          <td><button class="btn btn-sm btn-primary"></button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <footer>
+    <div class="text" style="">
+      <span>Created By <a href="https://www.linkedin.com/in/balakishanrenjarla/" style="color: gainsboro;" >BalakishanRenjarla</a> | &#169; 2021
+        All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
